@@ -12,6 +12,11 @@
 } */
 body {
   font-family: "Red Hat Display", sans-serif;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
 }
 
 ul {
@@ -44,6 +49,7 @@ li a {
   line-height: 21.59px;
   color: #035755;
   text-shadow: 2px 2px 5px rgb(151, 125, 125);
+  cursor: pointer;
   /* box-shadow: 0px 4px 4px 0px #00000040; */
 }
 .nav-active {
@@ -64,6 +70,7 @@ li a {
 }
 .nav-icon {
   margin-right: 14px;
+  cursor: pointer;
 }
 .nav-active {
   position: relative;
@@ -125,7 +132,8 @@ img {
 
   padding-left: 20px;
 }
-h1 {
+h1,
+h2 {
   color: #035755;
   font-weight: 700;
   font-size: 48px;
@@ -196,14 +204,14 @@ h1 {
   box-shadow: 12px 12px 2px 1px rgba(139, 139, 155, 0.2);
   margin-right: 30px;
   border-radius: 10px;
-  width: 380px;
+  width: 40%;
 }
 .section3-content {
-  width: 80%;
+  width: 90%;
   margin: auto;
   background-image: url("./assets/path1470\ \(1\).png"),
     url("./assets/path1470.png");
-  background-position: right 1px top 20px, left 20px bottom 30px;
+  background-position: right 4px top 20px, left 20px bottom 30px;
   background-repeat: no-repeat;
 }
 .section3-content-heading {
@@ -217,29 +225,39 @@ h1 {
 .section3-content-card-imagediv {
   padding: 65px 90px;
 }
+.secondPhoto {
+  padding: 45px 90px;
+}
+#section3-header {
+  padding: 10px 12px;
+}
 
-.section3-content-card-imagediv > img {
-  height: 240px;
-}
 .section3-content-card-imagediv + h3 {
-  padding: 13px 89px;
-}
-h3 {
-  color: rgba(3, 87, 85, 1);
+  color: #035755;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 52.92px */
+  text-transform: capitalize;
 }
 
 .section3-content-cardpar {
-  padding: 13px 60px 70px 60px;
+  padding: 13px 20px 78px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
 }
-.activecard {
+.section3-content-card {
   position: relative;
 }
 
-.activecard::after {
+.section3-content-card:hover::after {
   content: "";
   border-radius: 0px 0px 100px 100px;
   background: #fa5652;
-  width: 380px;
+  width: 100%;
   height: 6px;
   left: 0;
 
@@ -278,6 +296,9 @@ h3 {
 }
 .section-five {
   padding-top: 250px;
+  background: url("./assets/green.png"), url("./assets/pink.png");
+  background-repeat: no-repeat;
+  background-position: 96% 82%, 98% 95%;
 }
 
 .section-five-content-flex {
@@ -331,4 +352,109 @@ h3 {
   font-weight: 400;
   line-height: 221%; /* 39.78px */
   text-transform: capitalize;
+}
+.section-five-numberfour {
+  width: 75px;
+  height: 75px;
+  background-color: #fee6e5;
+  border-radius: 50px;
+  display: flex;
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.section-five-numberlogofour {
+  color: #fa5652;
+  font-family: Red Hat Display;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%; /* 63.8px */
+  text-transform: capitalize;
+}
+
+/* footer  */
+
+.footer {
+  background: url("./assets/footer1.png"), url("./assets/footer2.png");
+  background-repeat: no-repeat;
+  background-position: 89% 10%, 98% 45%;
+}
+.footer-content-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-header {
+  width: 40%;
+  text-align: center;
+  color: #0c6c44;
+  font-family: Gelion;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form {
+  padding-top: 80px;
+  position: relative;
+}
+.footer-content-logos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 140px;
+  align-items: center;
+}
+.submit {
+  background-color: #fa5652;
+  border: none;
+  border-radius: 157px;
+  color: white;
+  padding: 26px 80px;
+  color: #fff;
+  font-family: Gelion;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* margin-left: -10px; */
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  cursor: pointer;
+}
+.footer-iconheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+.footer-icon {
+  padding-right: 16.2px;
+}
+
+.footer-input {
+  padding: 44px 480px 44px 41px;
+  border-radius: 157px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+
+  border: none;
+}
+.footer-links li {
+  padding-right: 30px;
+  margin-right: 10px;
+}
+
+.footer-medialinks {
+  display: flex;
+  gap: 40px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 67px;
 }
